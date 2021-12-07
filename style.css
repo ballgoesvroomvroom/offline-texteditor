@@ -193,6 +193,7 @@ html, body {
 	aspect-ratio: 1;
 	padding: 5px;
 	margin-right: 10px;
+	margin-left: 15px;
 	border-radius: 40%;
 }
 .tabpages > .tabpages-closebutton:hover {
