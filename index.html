@@ -9,17 +9,57 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="app.js"></script>
 		<title>webpage</title>
 	</head>
 	<body style="max-width: 100%">
 		<div id="topbar">
-			<p class="menutext">File</p>
+			<div class="menutext" id="file">
+				File
+				<div class="options-expand" id="fileoptions">
+					<div id="options-openfile">
+						Open file
+					</div>
+					<div id="options-openfolder">
+						Open folder
+					</div>
+					<div id="options-savefile">
+						Save file Ctrl S
+					</div>
+				</div>		
+			</div>
+			<div class="menutext" id="preferences">
+				Preferences
+				<div class="options-expand" id="preferencesoptions">
+					<div id="options-none">
+						None
+					</div>
+				</div>
+			</div>
 		</div>
-		<div id="sidebar">
-			<div id="sidebar-content">
-				<p>File1.jpg</p>
-				<p>app.js</p>
+		<div id="main-window">
+			<div id="sidebar">
+				<div id="sidebar-contenthost">
+					<div>File1.jpg</div>
+					<div>app.js</div>
+				</div>
+			</div>
+			<div id="editorcontainer">
+				<div id="editortopbar">
+					<div id="editortopbar-whitespace">
+					</div>
+					<div class="tabpages">
+						<p class="tabpages-title">
+							app.jssssssssssssssssssssssddd
+						</p>
+						<p class="tabpages-closebutton">
+							x
+						</p>
+					</div>
+				</div>
+				<div id="editorcontent">
+				</div>
 			</div>
 		</div>
 	</body>
