@@ -77,7 +77,7 @@ table {
 
 	--topbar-height: 36px;
 
-	--code-font: "Consolas";
+	--code-font: 'Roboto Mono', monospace;
 }
 html, body {
 	overflow-x: hidden;
