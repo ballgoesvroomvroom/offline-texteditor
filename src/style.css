@@ -46,12 +46,38 @@ table {
 	border-spacing: 0;
 }
 /* FINISH CSS RESET */
- 
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	background-clip: padding-box;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #757575;
+	border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #9c9c9c;
+	border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #d6d6d6;
+}
+
 :root {
 	--primary-color: #1c1c1c;
 	--secondary-color: #292929;
 
 	--topbar-height: 36px;
+
+	--code-font: "Consolas";
 }
 html, body {
 	overflow-x: hidden;
@@ -136,7 +162,9 @@ html, body {
 	flex-direction: column;
 }
 #sidebar-contenthost > div {
+	width: auto;
 	padding-bottom: 5px;
+	padding-right: 30px;
 	color: #7d7d7d;
 	font-family: 'Readex Pro', sans-serif;
 }
@@ -154,13 +182,34 @@ html, body {
 	height: 36px;
 	min-height: 36px;
 	max-height: 10%;
+	white-space: nowrap;
 	overflow-x: auto;
+	overflow-y: hidden;
 }
 #editorcontent {
 	background-color: var(--primary-color);
 	width: 100%;
+	display: flex;
 	flex: 1;
+	min-width: -webkit-min-content;
 	border-radius: 10px 0px 0px 0px; /* just 3 values will do tbh */
+	overflow: auto;
+}
+
+#editoreditable {
+	margin-left: 30px;
+	margin-right: 5px;
+	margin-top: 5px;
+	width: calc(100% - 35px);
+	height: calc(100% - 5px);
+	font-family: var(--code-font);
+	color: #fff;
+	tab-size: 4;
+	white-space: pre-wrap;
+}
+
+#editoreditable:focus {
+	outline: none;
 }
 
 #editortopbar-whitespace {
