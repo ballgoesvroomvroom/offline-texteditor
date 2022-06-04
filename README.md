@@ -1,3 +1,5 @@
+# [ Not finished, no longer supported ] 
+
 # Offline Text editor
 A minimalistic text editor built with HTML, CSS and Javascript.<br />
 Modelled off Sublime Text.<br />
